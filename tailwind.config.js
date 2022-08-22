@@ -12,6 +12,9 @@ module.exports = {
       fontSize: {
         'xxs': '.625rem',
       },
+      spacing: {
+        '128': '32rem',
+      }
     },
   },
   plugins: [],

@@ -3,7 +3,7 @@ import Image from "next/image";
 const Footer = () => {
     return (
         <header>
-            <nav className="fixed w-full bottom-0 pb-4">
+            <nav className="sticky bottom-0 left-0 w-full pb-4 mt-20">
                 <div className="flex flex-row items-center mb-4">
                     <div className="flex ml-6 md:mr-20 md:mr-0 text-gray-500 text-md md:text-lg whitespace-nowrap">
                         © 2022 D_Agency
