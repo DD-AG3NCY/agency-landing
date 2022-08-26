@@ -54,9 +54,11 @@ export default function Home() {
                     </div>
                 }
             </main>
-            <footer>
-                <Footer/>
-            </footer>
+            <MenuContext.Provider value={{isOpen, setOpen}}>
+                <footer>
+                    <Footer/>
+                </footer>
+            </MenuContext.Provider>
         </div>
     )
 }
