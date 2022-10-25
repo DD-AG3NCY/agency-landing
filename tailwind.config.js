@@ -6,6 +6,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'landing-background': "url('/landing-background.svg')",
+      },
+      colors: {
+        'hero-pink': '#be2d61'
+      },
       height: {
         '.25': '.0625rem',
       },
