@@ -1,30 +1,31 @@
-import Image from "next/image";
-import {useContext} from "react";
-import {MenuContext} from "../pages";
-
 const Footer = () => {
-    const {isOpen} = useContext(MenuContext);
 
     return (
-        <nav className="sticky bottom-0 left-0 w-full pb-4">
-            <div className="flex flex-row items-center mb-4">
-                <div className="flex ml-6 md:mr-20 md:mr-0 text-gray-500 text-md md:text-lg whitespace-nowrap">
-                    © 2022 D_Agency
+        <nav className="fixed bottom-0 left-0 w-full pb-4 bg-hero-pink text-white">
+            <div className="flex ml-4 md:ml-8 mt-8 mb-4">
+                <div className="flex flex-col text-sm">
+                    <a href="mailto: hello@d_agency.com"
+                       className="flex md:text-lg hover:underline">hello@d_agency.com</a>
+                    <div className="flex mt-16 md:mr-20 md:mr-0 md:text-lg">
+                        © 2022 D_D Agency
+                    </div>
                 </div>
-                <div className="flex justify-end flex-grow items-center ml-16 mr-6 mt-2 gap-8">
-                    {!isOpen && <a
-                        href="#"><Image src={"/discord-icon.svg"} alt="Discord logo" width={30} height={30}></Image>
-                    </a>}
-                    {!isOpen && <a
-                        href="#">
-                        <Image src={"/twitter-icon.svg"} alt="Twitter logo" width={30} height={30}></Image>
-                    </a>}
-                    {!isOpen && <a
-                        href="#">
-                        <Image src={"/instagram-icon.svg"} alt="Instagram logo" width={30} height={30}></Image>
-                    </a>}
-                    {isOpen && <a href="mailto: hello@d_agency.com"
-                                  className="flex text-gray-500 mr-6 text-md md:text-lg hover:underline">hello@d_agency.com</a>}
+                <div className="flex mr-4 md:mr-8 flex-grow justify-end text-sm md:text-lg ml-4 md:ml-16 mr-6 gap-x-2 md:gap-x-8">
+                    <div className="hover:underline">
+                        Discord
+                    </div>
+                    <div>
+                        -
+                    </div>
+                    <div className="hover:underline">
+                        Twitter
+                    </div>
+                    <div>
+                        -
+                    </div>
+                    <div className="hover:underline">
+                        Instagram
+                    </div>
                 </div>
             </div>
         </nav>

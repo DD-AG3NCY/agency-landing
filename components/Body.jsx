@@ -1,14 +1,11 @@
 const Body = (props) => {
     return (
-        <div>
-            <div className="text-gray-300 pb-4">
+        <div className="block text-white">
+            <div className="inline-block font-light pr-4 pl-4 pt-2 tracking-widest bg-hero-pink">
                 {props.headlineText}
             </div>
-            <div>
+            <div className="bg-hero-pink text-2xl p-4 font-light">
                 {props.bodyText}
-            </div>
-            <div className="pt-4 underline">
-                {props.bottomText}
             </div>
         </div>
     )
