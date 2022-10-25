@@ -4,10 +4,10 @@ const Header = () => {
     return (
         <header>
             <nav className="flex text-white flex-row justify-between top-0 pt-8 pb-8">
-                <div className="flex md:ml-8 ml-4 mr-4 md:mr-0 min-w-[40px]">
+                <div className="flex md:ml-8 ml-4 mr-2 md:mr-0 min-w-[60px]">
                     <Image src={"/agency-logo.svg"} alt="Developer DAO agency logo" width={80} height={80}></Image>
                 </div>
-                <div className="flex font-light tracking-widest md:text-sm lg:text-lg text-xs flex-row items-center align-middle gap-4">
+                <div className="flex font-light tracking-widest md:text-sm lg:text-xl text-xs flex-row items-center align-middle gap-4">
                     <div className="hover:text-hero-pink">SERVICES</div>
                     <div className="w-px bg-hero-pink h-1/2"></div>
                     <div className="hover:text-hero-pink">OUR PROJECTS</div>
