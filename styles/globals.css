@@ -12,4 +12,12 @@
   .btn {
     @apply inline-block bg-black text-white dark:text-black dark:bg-white px-4 py-3 ml-4 md:text-sm md:px-4 md:py-4 lg:px-8 lg:py-3 lg:text-lg border-white border-solid border mr-4 whitespace-nowrap text-xs;
   }
+
+  .input {
+    @apply transition-all placeholder:italic placeholder:text-light-gray mt-0 block w-full px-0.5 border-0 border-b-[1px] bg-transparent border-black dark:border-white dark:focus:border-pink focus:ring-0 focus:border-pink focus:border-b-[5px] focus:outline-none;
+  }
+
+  .label-required {
+    @apply after:content-['*'] after:ml-0.5 after:text-red-500;
+  }
 }

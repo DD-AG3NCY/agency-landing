@@ -14,6 +14,8 @@ module.exports = {
         "hero-pink": "#be2d61",
         "pink": "#be2d61",
         black: "#111111",
+        "dark-gray": "#202020",
+        "light-gray": "#EFEFEF",
       },
       height: {
         ".25": ".0625rem",
@@ -21,10 +23,15 @@ module.exports = {
       fontSize: {
         xxs: ".625rem",
       },
+      fontFamily: {
+        lato: ["Lato", "sans-serif"],
+      },
       spacing: {
         128: "32rem",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms"),
+  ],
 };
