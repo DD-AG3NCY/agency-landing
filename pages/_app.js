@@ -1,3 +1,4 @@
+import "@fontsource/lato";
 import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
 

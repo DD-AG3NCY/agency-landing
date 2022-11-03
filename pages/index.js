@@ -6,7 +6,7 @@ import HireUs from "../components/HireUs";
 
 export default function Home() {
   return (
-    <div>
+    <div className="font-lato">
       <Head>
         <title>D_D Agency</title>
         <meta name="description" content="Developer DAO's Agency" />
