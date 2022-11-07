@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Body from "../components/Body";
 import HireUs from "../components/HireUs";
+import Services from "../components/Services";
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+        <Services/>
       <HireUs />
       <footer className="max-w-full">
         <Footer />
