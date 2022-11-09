@@ -29,6 +29,9 @@ module.exports = {
       spacing: {
         128: "32rem",
       },
+      variants: {
+        fill: ['hover']
+      },
     },
   },
   plugins: [

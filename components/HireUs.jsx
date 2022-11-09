@@ -141,18 +141,21 @@ const HireUs = () => {
               onFileSelectSuccess={(file) => setSelectedFile(file)}
               onFileSelectError={({ error }) => alert(error)}
             />
-            <button type="submit" className="btn ml-0 w-full">
+            <button type="submit" className="btn ml-0 w-fit">
               Submit
             </button>
           </form>
         </div>
-        <div className="flex w-full flex-col gap-4 md:w-96">
+        <div id="join-us" className="flex w-full flex-col gap-4 md:w-96">
           <h2 className="max-w-fit border-b-2 border-pink pb-4 text-5xl uppercase">
             Join us
           </h2>
           <p className="w-full">
             Lorem ipsum dolor sit amet dolor consectur adipiscing elit.
           </p>
+          <a href="http://discord.gg/devdao" target="_blank" className="btn ml-0 w-fit" rel="noreferrer">
+            Join Discord
+          </a>
         </div>
       </div>
     </section>

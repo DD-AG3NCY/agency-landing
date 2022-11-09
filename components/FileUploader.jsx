@@ -9,11 +9,11 @@ export const FileUploader = ({ onFileSelectSuccess, onFileSelectError }) => {
 
   return (
     <div>
-      <label className="flex w-full cursor-pointer items-center justify-center rounded-md bg-[#252525] py-4">
+      <label className="flex text-black bg-white dark:text-light-gray dark:bg-[#252525] w-full cursor-pointer items-center justify-center rounded-md py-4">
         <span>Attach a brief</span>
         <input type="file" onChange={handleFileInput} className="hidden" />
       </label>
-      <small className="text-xs dark:text-light-gray">Max file size 20mb</small>
+      <small className="text-xs text-black dark:text-light-gray">Max file size 20mb</small>
     </div>
   );
 };
