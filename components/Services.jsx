@@ -1,7 +1,7 @@
 import Accordion from "./Accordion";
 
 const Services = () => {
-    return (<div className="flex flex-col pb-16 pl-16 pr-16">
+    return (<div id="services" className="flex flex-col pb-16 pl-16 pr-16">
         <div className="pb-2 font-light dark:text-white text-2xl ml-8 mt-16 text-5xl">
             SERVICES
             <div className="w-56 border-hero-pink pb-2 border-b-2">

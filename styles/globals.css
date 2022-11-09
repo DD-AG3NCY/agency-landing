@@ -10,7 +10,7 @@
 
 @layer components {
   .btn {
-    @apply inline-block bg-black text-white dark:text-black dark:bg-white px-4 py-3 ml-4 md:text-sm md:px-4 md:py-4 lg:px-8 lg:py-3 lg:text-lg border-white border-solid border mr-4 whitespace-nowrap text-xs;
+    @apply inline-block bg-black text-white dark:text-black dark:bg-white px-4 py-3 ml-2 md:text-sm md:px-4 md:py-4 lg:px-8 lg:py-3 lg:text-lg border-white border-solid border mr-2 whitespace-nowrap text-xs;
   }
 
   .input {
