@@ -5,6 +5,7 @@ import Body from "../components/Body";
 import HireUs from "../components/HireUs";
 import Services from "../components/Services";
 import OurPartners from "../components/OurPartners";
+// import OurProjects from "../components/OurProjects";
 
 export default function Home() {
   return (
@@ -50,6 +51,7 @@ export default function Home() {
       <div className="p-16">
         <OurPartners />
       </div>
+      {/* <OurProjects /> */}
       <footer className="max-w-full">
         <Footer />
       </footer>
