@@ -88,12 +88,13 @@ const HireUs = () => {
                       name={type}
                       required
                       checked={selectedProjectTypes.includes(type)}
+                      onChange={() => {}}
                       value={type}
                       className="peer hidden"
                     />
                     <label
                       htmlFor={type}
-                      className="inline-flex items-center rounded-md border border-black bg-transparent px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink focus:ring-offset-2 peer-checked:border-none peer-checked:bg-pink peer-checked:text-white dark:border-light-gray"
+                      className="shadow-inset inline-flex items-center rounded-full bg-transparent px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink focus:ring-offset-2 peer-checked:border-none peer-checked:bg-pink peer-checked:text-white peer-checked:shadow-none"
                     >
                       {type}
                     </label>
@@ -153,7 +154,12 @@ const HireUs = () => {
           <p className="w-full">
             Lorem ipsum dolor sit amet dolor consectur adipiscing elit.
           </p>
-          <a href="http://discord.gg/devdao" target="_blank" className="btn ml-0 w-fit" rel="noreferrer">
+          <a
+            href="http://discord.gg/devdao"
+            target="_blank"
+            className="btn ml-0 w-fit"
+            rel="noreferrer"
+          >
             Join Discord
           </a>
         </div>

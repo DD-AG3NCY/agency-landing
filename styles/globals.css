@@ -10,14 +10,22 @@
 
 @layer components {
   .btn {
-    @apply inline-block bg-black text-white dark:text-black dark:bg-white px-4 py-3 ml-2 md:text-sm md:px-4 md:py-4 lg:px-8 lg:py-3 lg:text-lg border-white border-solid border mr-2 whitespace-nowrap text-xs;
+    @apply ml-2 mr-2 inline-block whitespace-nowrap border border-solid border-white bg-black px-4 py-3 text-xs text-white transition-all hover:brightness-75 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 focus:ring-offset-white dark:bg-white dark:text-black dark:focus:ring-white dark:focus:ring-offset-black md:px-4 md:py-4 md:text-sm lg:px-8 lg:py-3 lg:text-lg;
   }
 
   .input {
-    @apply transition-all placeholder:italic placeholder:text-light-gray mt-0 block w-full px-0.5 border-0 border-b-[1px] bg-transparent border-black dark:border-white dark:focus:border-pink focus:ring-0 focus:border-pink focus:border-b-[5px] focus:outline-none;
+    @apply mt-0 block w-full border-0 border-b-[1px] border-black bg-transparent px-0.5 transition-all placeholder:italic placeholder:text-light-gray focus:border-b-[5px] focus:border-pink focus:outline-none focus:ring-0 dark:border-white dark:focus:border-pink;
   }
 
   .label-required {
-    @apply after:content-['*'] after:ml-0.5 after:text-red-500;
+    @apply after:ml-0.5 after:text-red-500 after:content-['*'];
+  }
+
+  .shadow-inset {
+    box-shadow: inset 0 0 0 1px rgb(17, 17, 17);
+  }
+
+  .dark .shadow-inset {
+    box-shadow: inset 0 0 0 1px rgb(239, 239, 239);
   }
 }
