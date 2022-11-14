@@ -8,6 +8,12 @@
   }
 }
 
+@layer utilities {
+  .animation-delay-8000 {
+    animation-delay: 8s;
+  }
+}
+
 @layer components {
   .btn {
     @apply ml-2 mr-2 inline-block whitespace-nowrap border border-solid border-white bg-black px-4 py-3 text-xs text-white transition-all hover:brightness-75 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 focus:ring-offset-white dark:bg-white dark:text-black dark:focus:ring-white dark:focus:ring-offset-black md:px-4 md:py-4 md:text-sm lg:px-8 lg:py-3 lg:text-lg;
