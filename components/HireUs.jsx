@@ -25,10 +25,8 @@ const HireUs = () => {
             Hire us
           </h2>
           <p className="max-w-prose text-xl">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro id
-            sunt iusto harum, ut blanditiis repellendus exercitationem a nulla
-            dolores facere perspiciatis error magnam maiores illum vitae
-            accusamus soluta? Voluptatibus?
+            Whether you need us to integrate with your team or partner with you to offer the best solution for your product
+            needs, we can help. We&apos;re not just a team of experts, we&apos;re your team!
           </p>
           <form
             onSubmit={(e) => {
@@ -152,7 +150,7 @@ const HireUs = () => {
             Join us
           </h2>
           <p className="w-full">
-            Lorem ipsum dolor sit amet dolor consectur adipiscing elit.
+            Join Developer DAO and help us build the future of work. We&apos;re always looking for experienced developers, designers, and product experts.
           </p>
           <a
             href="http://discord.gg/devdao"

@@ -9,8 +9,8 @@ const Services = () => {
             </div>
         </div>
         <div className="text-xl dark:text-white pr-16 md:mr-28 ml-8 font-light mt-4">
-            We integrate with projects and create a seamless frictionless collaboration with teams. At all company or
-            project stages. We can see us as a partner or a as service provider.
+            Our goal is to make sure you have the best product possible, and that means working with you from the ground
+            up. We&apos;ll work with your team or partner with you to give you the best solution for your product needs.
         </div>
         <div>
             <Accordion/>
