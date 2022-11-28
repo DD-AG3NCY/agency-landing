@@ -12,9 +12,9 @@ const ThemeSwitcher = ({ className = "" }) => {
   return (
     <button
       onClick={toggleTheme}
-      className={`${className} rounded-full p-2 border-2 border-pink`}
+      className={`${className} rounded-full p-1 md:p-2 border-2 border-pink`}
     >
-      {resolvedTheme == "light" ? (
+      {resolvedTheme === "light" ? (
         <SunIcon className="w-6 h-6" />
       ) : (
         <MoonIcon className="w-6 h-6" />

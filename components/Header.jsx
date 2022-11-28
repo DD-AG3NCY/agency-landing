@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <header className="max-w-full">
       <nav className="max-w-full flex flex-row justify-between pt-8 pb-8">
-        <div className="flex md:ml-8 mr-2 md:mr-0 min-w-[60px]">
+        <div className="flex md:ml-8 mr-2 md:mr-0 min-w-[40px]">
           {resolvedTheme === "light" ? <Image
               src={"/agency-logo-light.svg"}
               alt="Developer DAO agency logo"
@@ -38,15 +38,15 @@ const Header = () => {
           ></Image>
           }
         </div>
-        <div className="flex font-light tracking-widest md:text-sm lg:text-xl text-xs flex-row items-center align-middle gap-4">
-          <button goto="services" onClick={onBtnClick} className="hover:text-pink">SERVICES</button>
+        <div className="flex font-light md:text-sm lg:text-xl text-xxs sm:text-xs flex-row items-center align-middle gap-2 md:gap-[1.25em]">
+          <button goto="services" onClick={onBtnClick} className="hover:text-pink tracking-[0.25em]">SERVICES</button>
           <div className="w-px bg-pink h-1/2"></div>
-          <button goto="services" onClick={onBtnClick} className="hover:text-pink">OUR PROJECTS</button>
+          <button goto="services" onClick={onBtnClick} className="hover:text-pink tracking-[0.25em]">OUR PROJECTS</button>
           <div className="w-px bg-pink h-1/2"></div>
-          <button goto="join-us" onClick={onBtnClick} className="hover:text-pink">JOIN US</button>
+          <button goto="join-us" onClick={onBtnClick} className="hover:text-pink tracking-[0.25em]">JOIN US</button>
         </div>
         <div className="flex md:mr-8">
-          <ul className="flex flex-row items-center">
+          <ul className="flex flex-row items-center md:gap-x-2">
             <li className="">
               <a className="btn" href="#">
                 HIRE US

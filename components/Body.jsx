@@ -1,6 +1,6 @@
 const Body = (props) => {
   return (
-    <div className="block text-white">
+    <div className="block text-white max-w-4xl">
       <div className="inline-block font-light pr-4 pl-4 pt-2 tracking-widest bg-pink">
         {props.headlineText}
       </div>
