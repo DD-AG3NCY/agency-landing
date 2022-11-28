@@ -4,12 +4,12 @@ import Footer from "../components/Footer";
 import Body from "../components/Body";
 import HireUs from "../components/HireUs";
 import Services from "../components/Services";
-import OurPartners from "../components/OurPartners";
+// import OurPartners from "../components/OurPartners";
 // import OurProjects from "../components/OurProjects";
 
 export default function Home() {
   return (
-    <div className="font-lato">
+    <div className="font-lato dark:bg-black">
       <Head>
         <title>D_D Agency</title>
         <meta name="description" content="Developer DAO's Agency" />
@@ -35,7 +35,7 @@ export default function Home() {
                     className="underline"
                     rel="noreferrer"
                   >
-                    DeveloperDAO
+                    Developer DAO
                   </a>
                   . By bringing together the best developers, designers and
                   project managers, we aim to collectively build products and
@@ -48,9 +48,9 @@ export default function Home() {
       </main>
       <Services />
       <HireUs />
-      <div className="p-16">
-        <OurPartners />
-      </div>
+      {/*<div className="p-16">*/}
+      {/*  <OurPartners />*/}
+      {/*</div>*/}
       {/* <OurProjects /> */}
       <footer className="max-w-full">
         <Footer />

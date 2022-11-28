@@ -18,7 +18,7 @@ const HireUs = () => {
   };
 
   return (
-    <section className="w-full bg-light-gray dark:bg-dark-gray">
+    <section className="w-full bg-light-gray dark:bg-black">
       <div className="flex flex-col gap-12 py-28 px-16 md:flex-row md:px-28">
         <div className="flex w-full flex-col gap-4">
           <h2 className="max-w-fit border-b-2 border-pink pb-4 text-5xl uppercase">
