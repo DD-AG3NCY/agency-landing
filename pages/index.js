@@ -20,9 +20,9 @@ export default function Home() {
         ></meta>
       </Head>
       <Header />
-      <main className="flex bg-landing-background bg-cover animate-blob animation-delay-8000 backdrop-saturate-200">
+      <main className="flex h-[40vh] md:h-[80vh] bg-landing-background bg-cover items-center backdrop-saturate-200">
         <div>
-          <div className="flex p-16 text-sm md:p-28 md:text-lg">
+          <div className="flex p-16 text-sm md:p-32 md:text-lg">
             <Body
               headlineText="WHO WE ARE"
               bodyText={
