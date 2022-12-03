@@ -38,7 +38,7 @@ const Header = () => {
           ></Image>
           }
         </div>
-        <div className="flex font-light md:text-sm lg:text-xl text-xxs sm:text-xs flex-row items-center align-middle gap-2 md:gap-[1.25em]">
+        <div className="flex font-light md:text-sm lg:text-xl text-xs sm:text-xs flex-row items-center align-middle gap-2 md:gap-[1.25em]">
           <button goto="services" onClick={onBtnClick} className="hover:text-pink tracking-[0.25em]">SERVICES</button>
           <div className="w-px bg-pink h-1/2"></div>
           <button goto="services" onClick={onBtnClick} className="hover:text-pink tracking-[0.25em]">OUR PROJECTS</button>
