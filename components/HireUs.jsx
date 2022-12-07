@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { createRecord } from "../lib/airtable.js";
 import { FileUploader } from "./FileUploader";
 
 const projectTypes = ["Consultancy", "Design", "Front-end", "Back-end"];
@@ -17,6 +18,24 @@ const HireUs = () => {
     setSelectedProjectTypes([...selectedProjectTypes, projectType]);
   };
 
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.currentTarget);
+    formData.append("projectTypes", selectedProjectTypes);
+    // formData.append("file", selectedFile);
+
+    // convert form data to object
+    const fields = {}
+    formData.forEach((value, key) => {
+      fields[key] = value;
+    });
+    
+    // send form data to Airtable
+    const result = await createRecord(fields)
+    console.log("result", result)
+  };
+
   return (
     <section className="w-full bg-light-gray dark:bg-black">
       <div className="flex flex-col gap-12 py-28 px-16 md:flex-row md:px-28">
@@ -29,10 +48,7 @@ const HireUs = () => {
             needs, we can help. We&apos;re not just a team of experts, we&apos;re your team!
           </p>
           <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              console.log(e.currentTarget);
-            }}
+            onSubmit={handleFormSubmit}
             className="mt-12 flex flex-col gap-10"
           >
             <div>
@@ -84,7 +100,6 @@ const HireUs = () => {
                     <input
                       type="checkbox"
                       name={type}
-                      required
                       checked={selectedProjectTypes.includes(type)}
                       onChange={() => {}}
                       value={type}
