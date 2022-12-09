@@ -48,7 +48,12 @@ const Header = () => {
         <div className="flex md:mr-8">
           <ul className="flex flex-row items-center md:gap-x-2">
             <li className="">
-              <a className="btn" href="#">
+              <a
+                  href="https://airtable.com/shrbSQGGElKBhfqlS"
+                  target="_blank"
+                  className="btn"
+                  rel="noreferrer"
+              >
                 HIRE US
               </a>
             </li>
