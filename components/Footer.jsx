@@ -1,24 +1,29 @@
 const Footer = () => {
   return (
-    <nav className="p-2 w-full max-w-full bg-pink text-white">
-      <div className="flex ml-4 md:ml-24 mt-8 mb-4">
-        <div className="flex flex-col text-sm">
+    <nav className="p-5 w-full max-w-full justify-center items-center flex bg-pink text-white border-t-2 border-black">
+      <div className="w-full max-w-6xl flex items-center">
+        <div className="flex items-center text-sm">
+          <p className="flex mr-3">© 2022 Agency</p>
           <a
             href="mailto: agency@developerdao.com"
-            className="flex md:text-lg hover:underline"
+            className="hover:underline"
           >
-            agency@developerdao.com
+            📪 - agency@developerdao.com
           </a>
-          <div className="flex mt-8 md:mt-16 md:mr-0 md:text-lg">© 2022 D_D Agency</div>
         </div>
-        <div className="flex mr-4 md:mr-24 flex-grow justify-end text-sm md:text-lg ml-4 md:ml-16 gap-x-2 md:gap-x-8">
+        <div className="flex flex-grow justify-end text-sm">
+          <a
+              href="https://github.com/D-D-Agency"
+              target="_blank"
+              className="hover:underline mr-4"
+              rel="noreferrer"
+          >Github</a>
           <a
               href="http://discord.gg/devdao"
               target="_blank"
-              className="hover:underline"
+              className="hover:underline mr-4"
               rel="noreferrer"
           >Discord</a>
-          <div>-</div>
           <a
               href="https://twitter.com/d_d_agency_web3"
               target="_blank"

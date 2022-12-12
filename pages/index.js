@@ -3,38 +3,36 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Body from "../components/Body";
 import HireUs from "../components/HireUs";
-import Services from "../components/Services";
+// import Services from "../components/Services";
 // import OurPartners from "../components/OurPartners";
-// import OurProjects from "../components/OurProjects";
+import OurProjects from "../components/OurProjects";
 
 export default function Home() {
   return (
     <div className="font-lato dark:bg-black">
       <Head>
-        <title>D_D Agency</title>
+        <title>Agency</title>
         <meta name="description" content="Developer DAO's Agency" />
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=1"
-        ></meta>
+          content="width=device-width, initial-scale=1"></meta>
       </Head>
       <Header />
-      <main className="flex h-[40vh] md:h-[80vh] bg-landing-background bg-cover items-center backdrop-saturate-200">
-        <div>
-          <div className="flex p-16 text-sm md:p-32 md:text-lg">
+      <main className="flex h-[60vh] items-center justify-center bg-landing-background bg-cover backdrop-saturate-200 md:h-[65vh]">
+        <div className="w-full max-w-6xl">
+          <div className="flex pl-8 text-sm md:text-lg">
             <Body
-              headlineText="WHO WE ARE"
+              headlineText="AGENCY"
               bodyText={
                 <div>
-                  D_D Agency is a collective venture builder curated from the
-                  best talent within{" "}
+                  We are a collective venture builder curated from the best
+                  talent within{" "}
                   <a
                     target="_blank"
                     href="https://www.developerdao.com/"
                     className="underline"
-                    rel="noreferrer"
-                  >
+                    rel="noreferrer">
                     Developer DAO
                   </a>
                   . By bringing together the best developers, designers and
@@ -46,12 +44,12 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <Services />
-      <HireUs />
+      <OurProjects />
+      {/* <Services /> */}
+      {/* <HireUs /> */}
       {/*<div className="p-16">*/}
-      {/*  <OurPartners />*/}
+      {/* <OurPartners /> */}
       {/*</div>*/}
-      {/* <OurProjects /> */}
       <footer className="max-w-full">
         <Footer />
       </footer>
