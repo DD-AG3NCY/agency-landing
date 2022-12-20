@@ -35,9 +35,8 @@ export default function Home() {
                     rel="noreferrer">
                     Developer DAO
                   </a>
-                  . By bringing together the best developers, designers and
-                  project managers, we aim to collectively build products and
-                  services for our clients and the web3 space.
+                  . We aim to collectively build products and services for our
+                  clients and the web3 space.
                 </div>
               }
             />

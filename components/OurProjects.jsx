@@ -1,41 +1,46 @@
 import Link from "next/link";
+import Image from "next/image";
 import Carousel from "nuka-carousel/lib/carousel";
+import agencyLogo from "../public/agency-logo.svg"
+import woop from "../public/woop.svg"
+import web3kit from "../public/web3kit.svg"
 
 const projects = [
   {
     name: "Agency Website",
-    logo: "https://via.placeholder.com/1080",
+    logo: agencyLogo,
     description: "Community effor to consolidate into a website the works underneath the organization.",
     people: [
       {
         name: "@Erik",
-      type: "lead"
+      type: "lead",
+      link:"https://twitter.com/erik_knobl"
     },
     {
       name: "@Julo",
-      link: "",
+      link: "https://twitter.com/0xJulo",
     type: "contributor"
   },
     {
       name: "@Gordo",
-      link: "",
+      link: "https://gordo.design",
     type: "contributor"
   },
     {
       name: "@Jacob",
-      link: "",
+      link: "https://twitter.com/jahabeebs",
     type: "contributor"
   },
     {
       name: "@Keseiko",
-      link: "",
+      link: "https://twitter.com/lucasemanuelss",
     type: "contributor"
   },
   ],
   },
   {
     name: "Web3 Event Kit",
-    logo: "https://via.placeholder.com/1080",
+    logo: web3kit,
     description: "Community effort to build up an web3 open source version of Vercel's Event Kit",
     link: "https://github.com/D-D-Agency/web3-event-kit",
     people: [
@@ -46,35 +51,35 @@ const projects = [
     },
       {
         name: "@Gordo",
-        link: "",
+        link: "https://gordo.design",
       type: "contributor"
     },
       {
         name: "@Smakosh",
-        link: "",
+        link: "https://twitter.com/smakosh",
       type: "contributor"
     },
     {
       name: "@Alerex",
-      link: "",
+      link: "https://twitter.com/alerex_eth",
     type: "contributor"
   },
   ],
   },
   {
     name: "Woop Pay",
-    logo: "https://via.placeholder.com/1080",
-    link: "",
+    logo: woop,
+    link: "https://www.wooppay.xyz/",
     description: "Web application to simplify cryptocurrency payment requests.",
     people: [
       {
         name: "@Alerex",
-        link: "",
+        link: "https://twitter.com/alerex_eth",
       type: "lead"
     },
       {
         name: "@Gordo",
-        link: "",
+        link: "https://gordo.design",
       type: "contributor"
     },
       {
@@ -125,21 +130,24 @@ const OurProjects = () => {
               <img key={project.name} src={project.logo} alt={project.name} />
             ))}
           </Carousel> */}
-          {projects.map((project) => <div className="border-2 border-pink p-4 hover:bg-pink mr-8 max-w-sm transition-all w-full" key={project.name}>
+          {projects.map((project) => <div className="border-2 border-pink p-4 mr-8 max-w-sm transition-all w-full" key={project.name}>
               <div>
-              <img className="mb-3" width={30} height={30} src={project.logo} alt={project.name} />
-            <Link className="cursor-pointer" href={project.link ? project.link : ""} target="_blank">
-              <p>{project.name}</p>
+              <Image className="mb-3 flex h-auto" height={30} src={project.logo} alt={project.name} />
+            <Link className="" href={project.link ? project.link : ""} target="_blank">
+              <p className="cursor-pointer hover:underline ">{project.name}</p>
                 </Link>
               <p className="opacity-70 text-sm mt-3">{project.description}</p>
               <hr className="my-2 opacity-10"/>
               <div className="flex flex-wrap text-sm text-white-200">
               {project.people && project.people.map((person) => {
-                return (<>
+                return (<Link href={person.link ? person.link : ""} target={"_blank"} key={person.name}>
                   <p style={
-                    {backgroundColor: person.type == "lead" ? "rgb(190 45 97 / var(--tw-bg-opacity))" : "transparent"}
-                    } className="mr-2 px-3 py-1 m-1 rounded tracking-wider text-xs border-pink border">{person.name}</p>                
-                </>)
+                    {
+                      backgroundColor: person.type == "lead" ? "rgb(190 45 97 / var(--tw-bg-opacity))" : "black",
+                      border: "1px solid " + person.type == "lead" && "black",
+                    }
+                    } className="mr-2 px-3 py-1 m-1 rounded tracking-wider text-xs  border-pink border cursor-pointer">{person.name}</p>                
+                </Link>)
               })}
               </div>
               </div>
