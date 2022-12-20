@@ -2,9 +2,6 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Body from "../components/Body";
-import HireUs from "../components/HireUs";
-// import Services from "../components/Services";
-// import OurPartners from "../components/OurPartners";
 import OurProjects from "../components/OurProjects";
 
 export default function Home() {
