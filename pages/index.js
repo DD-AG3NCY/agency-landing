@@ -52,3 +52,5 @@ export default function Home() {
     </div>
   );
 }
+
+Home.theme = "dark";
