@@ -1,20 +1,21 @@
-import Head from "next/head";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Body from "../components/Body";
-import OurProjects from "../components/OurProjects";
+import Head from 'next/head';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Body from '../components/Body';
+import OurProjects from '../components/OurProjects';
+import SEO from '../components/seo';
 
 export default function Home() {
   return (
     <div className="font-lato dark:bg-black">
-      <Head>
-        <title>Agency</title>
-        <meta name="description" content="Developer DAO's Agency" />
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1"></meta>
-      </Head>
+      <SEO
+        title={'Agency'}
+        description={
+          'We are a collective venture builder curated from the best talent within Developer DAO. We aim to collectively build products and services for our clients and the web3 space.'
+        }
+        rrssImg={'./RRSS.png'}
+      />
+
       <Header />
       <main className="flex h-[60vh] items-center justify-center bg-landing-background bg-cover backdrop-saturate-200 md:h-[65vh]">
         <div className="w-full max-w-6xl">
@@ -23,8 +24,10 @@ export default function Home() {
               headlineText="AGENCY"
               bodyText={
                 <div>
-                  We are a collective venture builder curated from the best
-                  talent within{" "}
+                  We are a collective
+                  venture builder
+                  curated from the best
+                  talent within{' '}
                   <a
                     target="_blank"
                     href="https://www.developerdao.com/"
@@ -32,8 +35,11 @@ export default function Home() {
                     rel="noreferrer">
                     Developer DAO
                   </a>
-                  . We aim to collectively build products and services for our
-                  clients and the web3 space.
+                  . We aim to
+                  collectively build
+                  products and services
+                  for our clients and
+                  the web3 space.
                 </div>
               }
             />
@@ -53,4 +59,4 @@ export default function Home() {
   );
 }
 
-Home.theme = "dark";
+Home.theme = 'dark';
