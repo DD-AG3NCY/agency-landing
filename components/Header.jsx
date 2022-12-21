@@ -6,22 +6,6 @@ import {Home} from '../pages/index';
 const Header = () => {
   const { resolvedTheme } = useTheme();
 
-  const scroll2El = elID => {
-    window.scrollTo({
-      top: document.getElementById(elID).offsetTop - 60,
-      behavior: 'smooth',
-    });
-  };
-
-  const onBtnClick = (e) => {
-    e.preventDefault();
-    const goto = e.target.getAttribute('goto');
-    setTimeout(() => {
-      scroll2El(goto);
-    }, 100);
-  }
-
-
   return (
     <header className="max-w-full flex justify-center">
         <div className="max-w-6xl w-full px-4">
@@ -51,13 +35,20 @@ const Header = () => {
         <div className="flex font-light md:text-sm text-xs sm:text-xs flex-row items-center align-middle gap-2 md:gap-[1.25em] mr-8">
 {/*           <button goto="services" onClick={onBtnClick} className="hover:text-pink tracking-[0.25em]">SERVICES</button>
           <div className="w-px bg-pink h-1/2"></div> */}
-          <button goto="services" onClick={onBtnClick} className="hover:text-pink tracking-[0.25em]">FOLLOW</button>
+          <a href="https://twitter.com/d_d_agency_web3" rel="noreferrer" target={"_blank"}>
+          <button goto="services"  className="hover:text-pink tracking-[0.25em]">FOLLOW</button>
+          </a>
+
           <div className="w-px bg-pink h-1/2 transition-all"></div>
           <a href="https://medium.com/@d_d_agency" rel="noreferrer" target={"_blank"}>
-          <button goto="services" onClick={onBtnClick} className="hover:text-pink tracking-[0.25em]">BLOG</button>
+          <button goto="services"  className="hover:text-pink tracking-[0.25em]">BLOG</button>
           </a>
+
           <div className="w-px bg-pink h-1/2 transition-all"></div>
-          <button goto="join-us" onClick={onBtnClick} className="hover:text-pink tracking-[0.25em]">JOIN US</button>
+          <a href="https://www.developerdao.com/" rel="noreferrer" target={"_blank"}>
+          <button goto="join-us"  className="hover:text-pink tracking-[0.25em]">JOIN US</button>
+          </a>
+          
         </div>
         
           <ul className="flex flex-row items-center md:gap-x-2">
