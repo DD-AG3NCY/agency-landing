@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <nav className="p-5 w-full max-w-full justify-center items-center flex bg-pink text-white border-t-2 border-black">
       <div className="w-full max-w-6xl flex items-center">
-        <div className="flex items-center text-sm">
+        <div className="flex items-center text-sm flex-wrap">
           <p className="flex mr-3">© 2022 Agency</p>
           <a
             href="mailto: agency@developerdao.com"
