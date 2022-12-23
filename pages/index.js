@@ -17,9 +17,10 @@ export default function Home() {
       />
 
       <Header />
+
       <main className="flex h-[60vh] items-center justify-center bg-landing-background bg-cover backdrop-saturate-200 md:h-[65vh]">
         <div className="w-full max-w-6xl">
-          <div className="flex pl-8 text-sm md:text-lg">
+          <div className="flex px-8 text-sm md:text-lg">
             <Body
               headlineText="AGENCY"
               bodyText={

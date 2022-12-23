@@ -115,12 +115,12 @@ const OurProjects = () => {
   return (
     <section className="flex w-full justify-center bg-light-gray pb-20 dark:bg-black">
       <div className="w-full max-w-6xl">
-        <div className="p-10">
+        <div className="md:p-10 p-8">
           <h2 className="max-w-fit border-b-2 border-pink pb-4 text-2xl uppercase">
             Projects
           </h2>
         </div>
-        <div className="flex w-full py-5 flex-wrap md:flex-nowrap gap-8 md:gap-0 px-16 md:px-0">
+        <div className="flex w-full py-5 flex-wrap md:flex-nowrap gap-8 md:gap-0 md:px-0 px-5">
           {/*           <Carousel
             wrapAround
             enableKeyboardControls
@@ -151,13 +151,15 @@ const OurProjects = () => {
           </Carousel> */}
           {projects.map((project) => (
             <div
-              className="mr-8 flex w-full max-w-sm flex-col border-2 border-pink p-4 transition-all "
+              className="md:mr-8 flex w-full max-w-sm flex-col border-2 border-pink p-4 transition-all "
               key={project.name}>
-              <div className="mb-3 flex h-16 w-auto justify-start">
+              <div className="inline-block mb-5">
                 <Image
                   className="w-full text-left"
                   src={project.logo}
                   alt={project.name}
+                  height={60}
+                  width={60}
                 />
               </div>
               <Link

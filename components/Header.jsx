@@ -37,18 +37,20 @@ const Header = () => {
               <a
                 href="https://twitter.com/d_d_agency_web3"
                 rel="noreferrer"
+                className='md:block hidden'
                 target={'_blank'}>
                 <button
                   goto="services"
-                  className="tracking-[0.25em] hover:text-pink">
+                  className="tracking-[0.25em] hover:text-pink transition-all">
                   FOLLOW
                 </button>
               </a>
 
-              <div className="h-1/2 w-px bg-pink transition-all"></div>
+              <div className="h-1/2 w-px bg-pink md:block hidden"></div>
               <a
                 href="https://medium.com/@d_d_agency"
                 rel="noreferrer"
+                className='md:block hidden'
                 target={'_blank'}>
                 <button
                   goto="services"
@@ -57,14 +59,15 @@ const Header = () => {
                 </button>
               </a>
 
-              <div className="h-1/2 w-px bg-pink transition-all"></div>
+              <div className="h-1/2 w-px bg-pink md:block hidden"></div>
               <a
                 href="https://www.developerdao.com/"
                 rel="noreferrer"
+                className='md:mr-0 mr-4'
                 target={'_blank'}>
                 <button
                   goto="join-us"
-                  className="tracking-[0.25em] hover:text-pink">
+                  className="tracking-[0.25em] hover:text-pink transition-all">
                   JOIN US
                 </button>
               </a>
@@ -75,7 +78,7 @@ const Header = () => {
                 <a
                   href="https://airtable.com/shrbSQGGElKBhfqlS"
                   target="_blank"
-                  className="btn-primary border border-pink bg-black py-2 px-2 md:px-5 text-xs md:text-sm tracking-[0.25em] transition-all hover:bg-white hover:text-black"
+                  className="btn-primary border border-pink bg-black py-2 px-5 text-xs md:text-sm tracking-[0.25em] transition-all hover:bg-pink hover:text-white"
                   rel="noreferrer">
                   HIRE US
                 </a>
