@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Body from '../components/Body';
@@ -11,7 +10,7 @@ export default function Home() {
       <SEO
         title={'Agency'}
         description={
-          'We are a collective venture builder curated from the best talent within Developer DAO. We aim to collectively build products and services for our clients and the web3 space.'
+          'We are a collective of venture builders curated from the best talent within Developer DAO. We aim to build products and services for clients across the web3 space.'
         }
         rrssImg={'./RRSS.png'}
       />
@@ -25,8 +24,8 @@ export default function Home() {
               headlineText="AGENCY"
               bodyText={
                 <div>
-                  We are a collective
-                  venture builder
+                  We are a collective of
+                  venture builders
                   curated from the best
                   talent within{' '}
                   <a
@@ -36,11 +35,10 @@ export default function Home() {
                     rel="noreferrer">
                     Developer DAO
                   </a>
-                  . We aim to
-                  collectively build
+                  . We aim to build
                   products and services
-                  for our clients and
-                  the web3 space.
+                  for clients across the
+                  web3 space.
                 </div>
               }
             />
