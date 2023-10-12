@@ -1,5 +1,5 @@
-import React from 'react';
 import Head from 'next/head';
+import React from 'react';
 
 export interface SEOProps {
   title?: string;
@@ -8,7 +8,7 @@ export interface SEOProps {
   url?: string;
   type?: string;
   twitterHandle?: string;
-  children?: React.ReactNode;
+  children?: any;
   lang?: string;
 }
 

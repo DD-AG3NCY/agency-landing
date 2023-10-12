@@ -1,7 +1,9 @@
 {
-  "extends": ["next/core-web-vitals", "eslint:recommended"],
+  "extends": ["next", "prettier"],
   "rules": { 
-    "no-unused-vars": "off",
-    "no-empty-patterns": "off"
+    "react/no-unused-vars": "off",
+    "react/no-empty-patterns": "off",
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off"
   }
 }

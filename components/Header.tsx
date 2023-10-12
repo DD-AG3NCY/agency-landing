@@ -13,12 +13,12 @@ const Header = () => {
   return (
     <TopBarGrid bgColor="agency-pink/30">
       <nav className="flex w-full justify-center">
-        <div className="flex items-center gap-10">
+        <div className="flex items-center justify-center gap-10">
           <GradientText>
             <Link
               href="https://www.developerdao.com/"
               target="_blank"
-              className="hover:text-primary-white w-[120px] font-semibold tracking-[0.15em] transition-colors"
+              className="hover:text-primary-white md:text-md w-[80px] text-center text-sm font-semibold tracking-[0.15em] transition-colors md:w-[120px]"
               rel="noreferrer">
               Members
             </Link>
@@ -32,11 +32,9 @@ const Header = () => {
             <Link
               href="https://twitter.com/d_d_agency_web3"
               rel="noreferrer"
-              className="flex w-[120px] justify-center font-semibold"
+              className="hover:text-primary-white md:text-md w-[80px] text-center text-sm font-semibold tracking-[0.15em] transition-colors md:w-[120px]"
               target={'_blank'}>
-              <button className="hover:text-primary-white w-[120px] font-semibold tracking-[0.15em] transition-colors">
-                Follow
-              </button>
+              Follow
             </Link>
           </GradientText>
         </div>

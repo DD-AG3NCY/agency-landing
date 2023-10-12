@@ -2,7 +2,7 @@ import {StarsBgImage} from '@gordo-d/d-d-ui-components';
 import {ReactNode} from 'react';
 
 export interface LayoutProps {
-  children: ReactNode;
+  children: any;
 }
 
 const AppLayout = ({
