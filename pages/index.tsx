@@ -25,8 +25,6 @@ const IHomeDefaultProps = {};
 const Home: Page<IHomeProps> = (
   props
 ) => {
-  const {} = props;
-
   useEffect(() => {}, []);
 
   return (
@@ -130,6 +128,24 @@ const Home: Page<IHomeProps> = (
             width={600}
             height={600}
             src={'/shineCircle.svg'}
+            alt={''}
+          />
+        </motion.div>
+      </div>
+
+      <div className="absolute -top-60 right-0 z-20 flex h-10 w-full justify-center">
+        <motion.div
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
+          transition={{
+            delay: 2.1,
+            duration: 0.8,
+            ease: 'easeInOut',
+          }}>
+          <Image
+            width={5}
+            height={500}
+            src={'/line.svg'}
             alt={''}
           />
         </motion.div>
