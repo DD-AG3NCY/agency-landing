@@ -6,17 +6,15 @@ import "../styles/globals.css";
 import "@gordo-d/d-d-ui-components/styles.css";
 
 import Layout from "../components/layout";
+import { Page } from "@/types/pages";
+import React from "react";
 
 const defaultLayout = (page: ReactElement) => {
   return <Layout>{page}</Layout>;
 };
 
-export type NextPageWithLayout<P = object, IP = P> = NextPage<P, IP> & {
-  getLayout?: (page: ReactElement) => ReactNode;
-};
-
 type AppPropsWithLayout = AppProps & {
-  Component: NextPageWithLayout;
+  Component: any;
 };
 
 export default function App({ Component, pageProps }: AppPropsWithLayout) {

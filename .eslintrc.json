@@ -1,9 +1,10 @@
 {
   "extends": ["next", "prettier"],
   "rules": { 
-    "react/no-unused-vars": "off",
-    "react/no-empty-patterns": "off",
-    "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off"
+    "react/prop-types": 0,
+    "react/no-unused-vars": 0,
+    "react/no-empty-patterns": 0,
+    "react/no-unescaped-entities": 0,
+    "@next/next/no-page-custom-font": 0
   }
 }

@@ -1,4 +1,5 @@
 import {StarsBgImage} from '@gordo-d/d-d-ui-components';
+import React from 'react';
 import {ReactNode} from 'react';
 
 export interface LayoutProps {
