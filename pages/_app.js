@@ -1,16 +1,16 @@
-import "@fontsource/lato";
+import React from "react";
+import { NextPage } from "next";
+import Layout from "../components/layout";
+import "@gordo-d/d-d-ui-components/styles.css";
 import "../styles/globals.css";
-import { ThemeProvider } from "next-themes";
 
-function MyApp({ Component, pageProps }) {
-  return (
-    <ThemeProvider
-      forcedTheme={Component.theme || null}
-      attribute="class"
-      defaultTheme="dark">
-      <Component {...pageProps} />
-    </ThemeProvider>
-  );
+const defaultLayout = (page) => {
+  return <Layout>{page}</Layout>;
+};
+
+function App({ Component, pageProps }) {
+  const getLayout = Component.getLayout ?? defaultLayout;
+  return <div id="ui-root">{getLayout(<Component {...pageProps} />)}</div>;
 }
 
-export default MyApp;
+export default App;
