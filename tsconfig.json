@@ -12,20 +12,15 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "jsx": "preserve",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "jsx": "preserve",
     "incremental": true,
     "paths": {
+      "react": [ "./node_modules/@types/react" ],
       "@/*": [
         "./*"
-      ],
-      "@/components/*": [
-        "./components/*"
-      ],
-      "@/lib/*": [
-        "./lib/*"
       ]
     },
     "forceConsistentCasingInFileNames": true
@@ -35,9 +30,7 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.jsx",
-    "**/*.js",
-    "**/*.json",
-    "tailwind.config.ts"
+    "**/*.js"
   ],
   "exclude": [
     "node_modules"

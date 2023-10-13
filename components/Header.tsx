@@ -4,7 +4,6 @@ import {
 } from '@gordo-d/d-d-ui-components';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 // import ThemeSwitcher from "./ThemeSwitcher";
 // import {Home} from '../pages/index';
 
@@ -13,7 +12,7 @@ const Header = () => {
 
   return (
     <TopBarGrid bgColor="agency-pink/30">
-      <nav className="flex w-full justify-center">
+      <nav className="flex w-full col-start-1 col-end-13 items-center justify-center">
         <div className="flex items-center justify-center gap-10">
           <GradientText>
             <Link
@@ -46,3 +45,4 @@ const Header = () => {
 
 Header.theme = 'dark';
 export default Header;
+
