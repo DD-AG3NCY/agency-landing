@@ -202,13 +202,9 @@ const Home: Page<IHomeProps> = (props) => {
 };
 
 Home.defaultProps = IHomeDefaultProps;
-<<<<<<< HEAD
 Home.getLayout = function getLayout(
   page: ReactElement
 ) {
-=======
-Home.getLayout = function getLayout(page: ReactElement) {
->>>>>>> origin
   return <AppLayout>{page}</AppLayout>;
 };
 
