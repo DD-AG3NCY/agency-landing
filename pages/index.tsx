@@ -94,7 +94,7 @@ const Home: Page<IHomeProps> = (props) => {
         </motion.div>
       </div>
 
-      <div className="absolute right-0 top-0 z-50 h-screen w-screen md:hidden">
+      <div className="absolute right-0 top-0 z-30 h-screen w-screen md:hidden">
         <motion.div
           className="mt-14 p-10"
           initial={{ opacity: 0 }}
@@ -145,7 +145,7 @@ const Home: Page<IHomeProps> = (props) => {
         gradientEndColor="#FFAD80"
       />
 
-      <div className="relative left-0 top-0 z-50">
+      <div className="relative left-0 top-0 z-40">
         <main className="z-40 flex h-[100vh] items-center justify-center md:h-[100vh]">
           <div className="flex w-full max-w-6xl flex-col items-center justify-center gap-2">
             <div className="flex px-8 text-sm md:text-lg">
@@ -202,9 +202,7 @@ const Home: Page<IHomeProps> = (props) => {
 };
 
 Home.defaultProps = IHomeDefaultProps;
-Home.getLayout = function getLayout(
-  page: ReactElement
-) {
+Home.getLayout = function getLayout(page: ReactElement) {
   return <AppLayout>{page}</AppLayout>;
 };
 
