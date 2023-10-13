@@ -32,9 +32,9 @@ const Home: Page<IHomeProps> = (props) => {
       <SEO
         title="AGΞNCY ΞXPERTS"
         description="We are a collective venture builder curated from the best talent within Developer DAO. We aim to collectively build products and services for our clients and the web3 space."
-        image="/RRSS.png"
+        image="/RRSS_short.png"
         url="https://agency.developerdao.com"
-        twitterHandle="@web3agency"
+        twitterHandle="@ddweb3experts"
       />
 
       <Header />
