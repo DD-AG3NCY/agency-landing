@@ -78,9 +78,6 @@ typings/
 # Next.js build output
 .next
 
-# Next.js build output
-.vercel/**/*
-
 # Nuxt.js build / generate output
 .nuxt
 dist
