@@ -1,6 +1,10 @@
 {
-  "extends": ["next/core-web-vitals", "eslint:recommended"],
+  "extends": ["next", "prettier"],
   "rules": { 
-    "no-unused-vars": "off"
+    "react/prop-types": 0,
+    "react/no-unused-vars": 0,
+    "react/no-empty-patterns": 0,
+    "react/no-unescaped-entities": 0,
+    "@next/next/no-page-custom-font": 0
   }
 }

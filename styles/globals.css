@@ -3,35 +3,13 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply transition-colors;
+    h1,h2,h3,h4 {
+      @apply font-heading;
+    }
+    b, strong, i, em, u, strike, small, big, sub, sup, mark, button, p, span, h5 {
+      @apply font-paragraph;
+    }
+    table, th, td, caption {
+      @apply font-paragraph;
+    }
   }
-}
-
-@layer utilities {
-  .animation-delay-8000 {
-    animation-delay: 8s;
-  }
-}
-
-@layer components {
-  .btn {
-    @apply ml-2 mr-2 inline-block whitespace-nowrap border border-solid border-white bg-black px-3 py-2 text-xxs text-white transition-all hover:brightness-75 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 focus:ring-offset-white dark:bg-white dark:text-black dark:focus:ring-white dark:focus:ring-offset-black md:px-4 md:py-4 md:text-sm lg:px-8 lg:py-3 lg:text-lg;
-  }
-
-  .input {
-    @apply mt-0 block w-full border-0 border-b-[1px] border-black bg-transparent px-0.5 transition-all placeholder:italic placeholder:text-light-gray focus:border-b-[5px] focus:border-pink focus:outline-none focus:ring-0 dark:border-white dark:focus:border-pink;
-  }
-
-  .label-required {
-    @apply after:ml-0.5 after:text-red-500 after:content-['*'];
-  }
-
-  .shadow-inset {
-    box-shadow: inset 0 0 0 1px rgb(17, 17, 17);
-  }
-
-  .dark .shadow-inset {
-    box-shadow: inset 0 0 0 1px rgb(239, 239, 239);
-  }
-}
