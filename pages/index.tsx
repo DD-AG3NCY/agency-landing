@@ -15,17 +15,17 @@ type IHomeProps = {};
 
 const IHomeDefaultProps = {};
 
+const StyledButton = styled(Button)`
+  box-shadow: 0px 2px 40px rgba(228, 134, 134, 0.372) !important;
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 5px 100px rgba(228, 137, 137, 0.772) !important;
+  }
+`;
+
 const Home: Page<IHomeProps> = (props) => {
   useEffect(() => {}, []);
-
-  const StyledButton = styled(Button)`
-    box-shadow: 0px 2px 40px rgba(228, 134, 134, 0.372) !important;
-    transition: box-shadow 0.3s ease-in-out;
-
-    &:hover {
-      box-shadow: 0 5px 100px rgba(228, 137, 137, 0.772) !important;
-    }
-  `;
 
   return (
     <article className="relative h-auto w-screen overflow-hidden">
@@ -202,7 +202,13 @@ const Home: Page<IHomeProps> = (props) => {
 };
 
 Home.defaultProps = IHomeDefaultProps;
+<<<<<<< HEAD
+Home.getLayout = function getLayout(
+  page: ReactElement
+) {
+=======
 Home.getLayout = function getLayout(page: ReactElement) {
+>>>>>>> origin
   return <AppLayout>{page}</AppLayout>;
 };
 
