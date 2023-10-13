@@ -3,7 +3,6 @@ import Header from '../components/Header';
 
 import LinesBackground from '@/components/Lines';
 import SEO from '@/components/SEO';
-import AppLayout from '@/components/layout';
 import {
   Body2,
   Button,
@@ -12,10 +11,7 @@ import {
 } from '@gordo-d/d-d-ui-components';
 import {motion} from 'framer-motion';
 import Link from 'next/link';
-import {
-  ReactElement,
-  useEffect,
-} from 'react';
+import {useEffect} from 'react';
 import styled from 'styled-components';
 
 type IHomeProps = {};
@@ -225,10 +221,5 @@ const Home = (props: any) => {
 };
 
 Home.defaultProps = IHomeDefaultProps;
-Home.getLayout = function getLayout(
-  page: ReactElement
-) {
-  return <AppLayout>{page}</AppLayout>;
-};
 
 export default Home;
