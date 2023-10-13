@@ -11,8 +11,8 @@ const Header = () => {
   // const { resolvedTheme } = useTheme();
 
   return (
-    <TopBarGrid bgColor="agency-pink/30">
-      <nav className="flex w-full col-start-1 col-end-13 items-center justify-center">
+    <TopBarGrid bgColor="agency-pink/30" className='z-50'>
+      <nav className="flex w-full col-start-1 col-end-13 items-center justify-center z-50">
         <div className="flex items-center justify-center gap-10">
           <GradientText>
             <Link
@@ -30,7 +30,7 @@ const Header = () => {
             height={50}></Image>
           <GradientText>
             <Link
-              href="https://twitter.com/d_d_agency_web3"
+              href="https://twitter.com/ddweb3experts"
               rel="noreferrer"
               className="hover:text-primary-white md:text-md w-[80px] text-center text-sm font-semibold tracking-[0.15em] transition-colors md:w-[120px]"
               target={'_blank'}>
