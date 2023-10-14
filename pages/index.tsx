@@ -15,7 +15,6 @@ type IHomeProps = {
   children: ReactElement
 };
 
-const IHomeDefaultProps = {};
 
 const StyledButton = styled(Button)`
   box-shadow: 0px 2px 40px rgba(228, 134, 134, 0.372) !important;
@@ -203,7 +202,6 @@ const Home: Page<IHomeProps> = (props) => {
   );
 };
 
-Home.defaultProps = IHomeDefaultProps;
 Home.getLayout = function getLayout(
   page: ReactElement
 ) {

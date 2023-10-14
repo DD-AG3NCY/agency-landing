@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Carousel from 'nuka-carousel/lib/carousel';
 import agencyLogo from '../public/agency-logo.svg';
 import woop from '../public/woop.svg';
 import web3kit from '../public/web3kit.svg';
@@ -10,7 +9,7 @@ const projects = [
     name: 'Agency Website',
     logo: agencyLogo,
     description:
-      'Community effor to consolidate into a website the works underneath the organization.',
+      'Community effort to consolidate into a website the works underneath the organization.',
     people: {
       leaders: [
         {
@@ -36,7 +35,7 @@ const projects = [
           type: 'contributor',
         },
         {
-          name: '@Keseiko',
+          name: '@Kseikyo',
           link: 'https://twitter.com/lucasemanuelss',
           type: 'contributor',
         },
@@ -115,12 +114,12 @@ const OurProjects = () => {
   return (
     <section className="flex w-full justify-center bg-light-gray pb-20 dark:bg-black">
       <div className="w-full max-w-6xl">
-        <div className="md:p-10 p-8">
+        <div className="p-8 md:p-10">
           <h2 className="max-w-fit border-b-2 border-pink pb-4 text-2xl uppercase">
             Projects
           </h2>
         </div>
-        <div className="flex w-full py-5 flex-wrap md:flex-nowrap gap-8 md:gap-0 md:px-0 px-5">
+        <div className="flex w-full flex-wrap gap-8 py-5 px-5 md:flex-nowrap md:gap-0 md:px-0">
           {/*           <Carousel
             wrapAround
             enableKeyboardControls
@@ -151,9 +150,9 @@ const OurProjects = () => {
           </Carousel> */}
           {projects.map((project) => (
             <div
-              className="md:mr-8 flex w-full max-w-sm flex-col border-2 border-pink p-4 transition-all "
+              className="flex w-full max-w-sm flex-col border-2 border-pink p-4 transition-all md:mr-8 "
               key={project.name}>
-              <div className="inline-block mb-5">
+              <div className="mb-5 inline-block">
                 <Image
                   className="w-full text-left"
                   src={project.logo}
@@ -178,13 +177,13 @@ const OurProjects = () => {
                 </p>
               </Link>
 
-              <p className="mt-3 text-sm opacity-90">
+              <p className="mt-3 text-sm">
                 {project.description}
               </p>
 
               <div className="my-3 h-[1px] w-full rounded-full bg-white opacity-10" />
 
-              <p className="mb-3 text-xs text-pink opacity-80">
+              <p className="mb-3 text-xs text-pink">
                 Leading:
               </p>
               <div className="text-white-200 flex flex-wrap text-sm">
@@ -195,8 +194,6 @@ const OurProjects = () => {
                         <Link
                           href={
                             person.link
-                              ? person.link
-                              : ''
                           }
                           target={
                             '_blank'
@@ -204,20 +201,7 @@ const OurProjects = () => {
                           key={
                             person.name
                           }>
-                          <p
-                            style={{
-                              backgroundColor:
-                                person.type ==
-                                'lead'
-                                  ? 'rgb(190 45 97 / var(--tw-bg-opacity))'
-                                  : 'black',
-                              border:
-                                '1px solid ' +
-                                  person.type ==
-                                  'lead' &&
-                                'black',
-                            }}
-                            className="mr-2 mb-2 cursor-pointer rounded border border-pink px-3  py-1 text-xs tracking-wider">
+                          <p className="mr-2 mb-2 cursor-pointer rounded bg-pink px-3 py-1 text-xs tracking-wider">
                             {
                               person.name
                             }
@@ -229,7 +213,7 @@ const OurProjects = () => {
               </div>
 
               <div className="my-3 h-[1px] w-full rounded-full bg-white opacity-10" />
-              <p className="mb-3 text-xs text-pink opacity-80">
+              <p className="mb-3 text-xs text-pink">
                 Contributors:
               </p>
               <div className="text-white-200 flex flex-wrap text-sm">
@@ -240,29 +224,12 @@ const OurProjects = () => {
                         <Link
                           href={
                             person.link
-                              ? person.link
-                              : ''
                           }
-                          target={
-                            '_blank'
-                          }
+                          target="_blank"
                           key={
                             person.name
                           }>
-                          <p
-                            style={{
-                              backgroundColor:
-                                person.type ==
-                                'lead'
-                                  ? 'rgb(190 45 97 / var(--tw-bg-opacity))'
-                                  : 'black',
-                              border:
-                                '1px solid ' +
-                                  person.type ==
-                                  'lead' &&
-                                'black',
-                            }}
-                            className="mr-2 mb-2 cursor-pointer rounded border border-pink px-3  py-1 text-xs tracking-wider">
+                          <p className="mr-2 mb-2 cursor-pointer rounded border border-pink px-3 py-1 text-xs tracking-wider">
                             {
                               person.name
                             }
