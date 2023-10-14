@@ -202,6 +202,7 @@ const Home: Page<IHomeProps> = (props) => {
   );
 };
 
+
 Home.getLayout = function getLayout(
   page: ReactElement
 ) {
