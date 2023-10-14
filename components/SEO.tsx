@@ -1,23 +1,25 @@
 import Head from 'next/head';
+import { ReactNode } from 'react';
 
-// export interface SEOProps {
-//   title?: string;
-//   description?: string;
-//   image?: string;
-//   url?: string;
-//   type?: string;
-//   twitterHandle?: string;
-//   children?: any;
-//   lang?: string;
-// }
+export interface SEOProps {
+  title?: string;
+  description?: string;
+  image?: string;
+  url?: string;
+  type?: string;
+  twitterHandle?: string;
+  children?: ReactNode;
+  lang?: string;
+}
 
-const SEO = ({
-  title,
-  description,
-  image,
-  url,
+const SEO: React.FC<SEOProps> = ({
   type = 'website',
-  twitterHandle,
+  title="AGΞNCY ΞXPERTS",
+  description="We are a collective venture builder curated from the best talent within Developer DAO. We aim to collectively build products and services for our clients and the web3 space.",
+  image="/RRSS_short.png",
+  url="https://agency.developerdao.com",
+  twitterHandle="@ddweb3experts",
+  children,
   lang = 'en',
 }) => {
   return (
