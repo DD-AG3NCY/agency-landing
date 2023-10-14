@@ -11,7 +11,9 @@ import Link from 'next/link';
 import { ReactElement, useEffect } from 'react';
 import styled from 'styled-components';
 
-type IHomeProps = {};
+type IHomeProps = {
+  children: ReactElement
+};
 
 const IHomeDefaultProps = {};
 
