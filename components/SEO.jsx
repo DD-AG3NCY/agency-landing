@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import React from 'react';
 
 // export interface SEOProps {
 //   title?: string;
@@ -23,92 +22,26 @@ const SEO = ({
 }) => {
   return (
     <Head>
-      <html lang={lang} />
-      {/* {children} */}
+      {children}
       {title && <title>{title}</title>}
-      {description && (
-        <meta
-          name="description"
-          content={description}
-        />
-      )}
-      {url && (
-        <link
-          rel="canonical"
-          href={url}
-        />
-      )}
-      {image && (
-        <link rel="icon" href={image} />
-      )}
+      {description && <meta name="description" content={description} />}
+      {url && <link rel="canonical" href={url} />}
+      {image && <link rel="icon" href={image} />}
 
       {/* Open Graph */}
-      {url && (
-        <meta
-          property="og:url"
-          content={url}
-        />
-      )}
-      {type && (
-        <meta
-          property="og:type"
-          content={type}
-        />
-      )}
-      {title && (
-        <meta
-          property="og:title"
-          content={title}
-        />
-      )}
-      {description && (
-        <meta
-          property="og:description"
-          content={description}
-        />
-      )}
-      {image && (
-        <meta
-          property="og:image"
-          content={image}
-        />
-      )}
+      {url && <meta property="og:url" content={url} />}
+      {type && <meta property="og:type" content={type} />}
+      {title && <meta property="og:title" content={title} />}
+      {description && <meta property="og:description" content={description} />}
+      {image && <meta property="og:image" content={image} />}
 
       {/* Twitter */}
-      <meta
-        name="twitter:card"
-        content="summary_large_image"
-      />
-      {title && (
-        <meta
-          name="twitter:title"
-          content={title}
-        />
-      )}
-      {description && (
-        <meta
-          name="twitter:description"
-          content={description}
-        />
-      )}
-      {image && (
-        <meta
-          name="twitter:image"
-          content={image}
-        />
-      )}
-      {url && (
-        <meta
-          name="twitter:site"
-          content={url}
-        />
-      )}
-      {twitterHandle && (
-        <meta
-          name="twitter:creator"
-          content={twitterHandle}
-        />
-      )}
+      <meta name="twitter:card" content="summary_large_image" />
+      {title && <meta name="twitter:title" content={title} />}
+      {description && <meta name="twitter:description" content={description} />}
+      {image && <meta name="twitter:image" content={image} />}
+      {url && <meta name="twitter:site" content={url} />}
+      {twitterHandle && <meta name="twitter:creator" content={twitterHandle} />}
     </Head>
   );
 };
