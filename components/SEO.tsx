@@ -1,23 +1,27 @@
 import Head from 'next/head';
+import React from 'react';
 
-// export interface SEOProps {
-//   title?: string;
-//   description?: string;
-//   image?: string;
-//   url?: string;
-//   type?: string;
-//   twitterHandle?: string;
-//   children?: any;
-//   lang?: string;
-// }
+export interface SEOProps {
+  title?: string;
+  description?: string;
+  image?: string;
+  icon?: string;
+  url?: string;
+  type?: string;
+  twitterHandle?: string;
+  children?: React.ReactNode;
+  lang?: string;
+}
 
-const SEO = ({
-  title,
-  description,
-  image,
-  url,
+const SEO: React.FC<SEOProps> = ({
   type = 'website',
-  twitterHandle,
+  title="Developer DAO",
+  description="BUIDL WEB3 WITH __ FRENS. Developer DAO has brought together some of the most talented people on the web to build web3.",
+  image="/RRSS_D_D_Image.png",
+  icon="/favicon.ico",
+  url="https://developerdao.com",
+  twitterHandle="@developerdao",
+  children,
   lang = 'en',
 }) => {
   return (
@@ -26,7 +30,7 @@ const SEO = ({
       {title && <title>{title}</title>}
       {description && <meta name="description" content={description} />}
       {url && <link rel="canonical" href={url} />}
-      {image && <link rel="icon" href={image} />}
+      {image && <link rel="icon" href={icon} />}
 
       {/* Open Graph */}
       {url && <meta property="og:url" content={url} />}
