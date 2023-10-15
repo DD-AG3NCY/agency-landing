@@ -204,7 +204,6 @@ const Home: Page<IHomeProps> = (props) => {
   );
 };
 
-Home.defaultProps = IHomeDefaultProps;
 Home.getLayout = function getLayout(
   page: ReactElement
 ) {
