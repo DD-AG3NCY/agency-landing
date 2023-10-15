@@ -2,9 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/ClashDisplay-Variable.woff2') format('woff2');
+}
+
 @layer base {
     h1,h2,h3,h4 {
       @apply font-heading;
+    }
+    h1,h2,h3,h4 {
+      @apply font-bold;
     }
     b, strong, i, em, u, strike, small, big, sub, sup, mark, button, p, span, h5 {
       @apply font-paragraph;
