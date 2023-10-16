@@ -1,12 +1,49 @@
 import {
   GradientText,
-  TopBarGrid,
 } from '@gordo-d/d-d-ui-components';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import React from 'react';
+import { useEffect, useState } from 'react';
 // import ThemeSwitcher from "./ThemeSwitcher";
 // import {Home} from '../pages/index';
 
+const TopBarGrid = ({ children }: any) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 100) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <motion.div
+      className={`fixed left-0 top-0 z-50 w-screen transition-all duration-300 
+                  ${
+                    isScrolled
+                      ? "shadow-b-s, border-b border-neutral-900 bg-neutral-800/70 backdrop-blur-md"
+                      : "bg-transparent"
+                  }`}>
+      <div className="flex w-full justify-center">
+        <div className="lg:grid-cols-lg lg:gap-lg xl:grid-cols-xl mx-5 mt-1 flex w-full grid-flow-row auto-rows-auto grid-cols-1 gap-y-16 p-5 md:grid md:w-auto">
+          {children}
+        </div>
+      </div>
+    </motion.div>
+  );
+};
 const Header = () => {
   // const { resolvedTheme } = useTheme();
 

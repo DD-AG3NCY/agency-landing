@@ -10,6 +10,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ReactElement, useEffect } from 'react';
 import styled from 'styled-components';
+import React from 'react';
 
 type IHomeProps = {
   children?: ReactElement

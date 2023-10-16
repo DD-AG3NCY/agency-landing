@@ -6,6 +6,7 @@ import "@gordo-d/d-d-ui-components/styles.css";
 import "../styles/globals.css";
 
 import Layout from "../components/layout";
+import React from "react";
 
 const defaultLayout = (page: ReactElement) => {
   return <Layout>{page}</Layout>;
