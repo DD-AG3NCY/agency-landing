@@ -10,6 +10,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ReactElement, useEffect } from 'react';
 import styled from 'styled-components';
+import Footer from '@/components/Footer';
 
 type IHomeProps = {
   children?: ReactElement
@@ -17,24 +18,24 @@ type IHomeProps = {
 
 const IHomeDefaultProps = {};
 
-const StyledButton = styled(Button)`
-  box-shadow: 0px 2px 40px rgba(228, 134, 134, 0.372) !important;
-  transition: box-shadow 0.3s ease-in-out;
-
-  &:hover {
-    box-shadow: 0 5px 100px rgba(228, 137, 137, 0.772) !important;
-  }
-`;
 
 const Home: Page<IHomeProps> = (props) => {
   const {children} = props;
   useEffect(() => {}, []);
+  const StyledButton = styled(Button)`
+    box-shadow: 0px 2px 40px rgba(228, 134, 134, 0.372) !important;
+    transition: box-shadow 0.3s ease-in-out;
+  
+    &:hover {
+      box-shadow: 0 5px 100px rgba(228, 137, 137, 0.772) !important;
+    }
+  `;
 
   return (
     <article className="relative h-auto w-screen overflow-hidden">
       <SEO
         title="AGΞNCY ΞXPERTS"
-        description="We are a collective venture builder curated from the best talent within Developer DAO. We aim to collectively build products and services for our clients and the web3 space."
+        description="A curated D_D group of senior profesionals providing web3 services."
         image="/RRSS_short.png"
         url="https://agency.developerdao.com"
         twitterHandle="@ddweb3experts"
@@ -188,6 +189,7 @@ const Home: Page<IHomeProps> = (props) => {
               </StyledButton>
             </Link>
           </div>
+          
         </main>
 
         {/* <OurProjects /> */}
@@ -198,7 +200,7 @@ const Home: Page<IHomeProps> = (props) => {
         {/* <OurPartners /> */}
         {/*</div>*/}
 
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </article>
   );

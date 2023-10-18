@@ -16,7 +16,7 @@ const Header = () => {
         <div className="flex items-center justify-center gap-10">
           <GradientText>
             <Link
-              href="https://www.developerdao.com/"
+              href="https://discord.gg/6TAmjUVsuA"
               target="_blank"
               className="hover:text-primary-white md:text-md w-[80px] text-center text-sm font-semibold tracking-[0.15em] transition-colors md:w-[120px]"
               rel="noreferrer">

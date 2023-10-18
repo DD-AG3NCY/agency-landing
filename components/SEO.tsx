@@ -5,6 +5,7 @@ export interface SEOProps {
   title?: string;
   description?: string;
   image?: string;
+  icon?: string;
   url?: string;
   type?: string;
   twitterHandle?: string;
@@ -17,6 +18,7 @@ const SEO: React.FC<SEOProps> = ({
   title="AGΞNCY ΞXPERTS",
   description="We are a collective venture builder curated from the best talent within Developer DAO. We aim to collectively build products and services for our clients and the web3 space.",
   image="/RRSS_short.png",
+  icon="/favicon.ico",
   url="https://agency.developerdao.com",
   twitterHandle="@ddweb3experts",
   children,
@@ -28,7 +30,7 @@ const SEO: React.FC<SEOProps> = ({
       {title && <title>{title}</title>}
       {description && <meta name="description" content={description} />}
       {url && <link rel="canonical" href={url} />}
-      {image && <link rel="icon" href={image} />}
+      {image && <link rel="icon" href={icon} />}
 
       {/* Open Graph */}
       {url && <meta property="og:url" content={url} />}
@@ -49,3 +51,4 @@ const SEO: React.FC<SEOProps> = ({
 };
 
 export default SEO;
+
