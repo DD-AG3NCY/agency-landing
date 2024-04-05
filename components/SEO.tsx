@@ -37,14 +37,14 @@ const SEO: React.FC<SEOProps> = ({
       {type && <meta property="og:type" content={type} />}
       {title && <meta property="og:title" content={title} />}
       {description && <meta property="og:description" content={description} />}
-      {image && <meta property="og:image" content={image} />}
+      {image && <meta property="og:image" content={url + image} />}
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       {title && <meta name="twitter:title" content={title} />}
       {description && <meta name="twitter:description" content={description} />}
-      {image && <meta name="twitter:image" content={image} />}
-      {url && <meta name="twitter:site" content={url} />}
+      {image && <meta name="twitter:image" content={url + image} />}
+      {twitterHandle && <meta name="twitter:site" content={twitterHandle} />}
       {twitterHandle && <meta name="twitter:creator" content={twitterHandle} />}
     </Head>
   );
